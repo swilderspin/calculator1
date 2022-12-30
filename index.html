@@ -1,26 +1,39 @@
-<!DOCTYPE = html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
 
-  <html>
-    <head>
-        <link rel="stylesheet" href="./css/index.css"
-      </head>
-     
-      <body>
-        <div class="surround">
-          <span id="num1-el"></span>
-          <span id="num2-el"></span>
-          <br>
-          <button id="addition" onclick="addNum ()">Add</button>
-          <button id="subtract" onclick="subtractNum()">Subtract</button>
-          <button id="divide" onclick="divideNum ()">Divide</button>
-          <button id="multiply" onclick="multiplyNum ()">Multiply</button>
-          <button id="cancel" onclick="cancel ()"> Cancel </button>
-          <br>
-          <br>
-          <span id="result-el">Result: </span>
-          <script src="./java/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./java/index.js"></script>
+</head>
+
+<body>
+    <div class="surround">
+
+        <div class="working-area">
+            <h1>Simple Calculator</h1>
+            <div>
+                <label for="number1"> <input type="number" id="Number1" class="number-input" value="0" placeholder="5"></label>
+                <label for="number2"> <input type="number" id="Number2" class="number-input" value="0" placeholder="5"></label>
+            </div>
+            <div class="calculation-grid">
+                <button class="calculator-button" type="button" id="addition" onclick="addNum ()">Add</button>
+                <button class="calculator-button" type="button" id="subtract" onclick="subtractNum()">Subtract</button>
+                <button class="calculator-button" type="button" id="divide" onclick="divideNum ()">Divide</button>
+                <button class="calculator-button" type="button" id="multiply" onclick="multiplyNum ()">Multiply</button>
+                <button class="calculator-button" type="button" id="cancel" onclick="cancel ()"> Cancel </button>
+            </div>
+            <div class="result-area">
+                <h2>Result</h2>
+                <span id="result-el" class="result-number">0 </span>
+
+            </div>
         </div>
-      </body>
-  </html>
-            
+    </div>
+</body>
+
+</html>
