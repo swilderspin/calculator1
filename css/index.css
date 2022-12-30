@@ -12,6 +12,7 @@ h1 {
 
 h2 {
     margin-bottom: 0;
+    font-size: 2rem;
 }
 
 span {
@@ -69,7 +70,7 @@ span {
 }
 
 .result-number {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
-    ;
+    color: rgb(3, 52, 3);
 }
