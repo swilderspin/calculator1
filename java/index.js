@@ -1,27 +1,47 @@
-var resultEl = document.getElementById("result-el")
-var num1 = document.getElementById("Number1").valueAsNumber;
-var num2 = document.getElementById("Number2").valueAsNumber;
+var resultEl = document.getElementById("result-el");
+
+
+
+
 
 
 function cancel() {
-    resultEl.innerText = 0
+    var num1 = document.getElementById("Number1").valueAsNumber;
+    var num2 = document.getElementById("Number2").valueAsNumber;
+    resultEl.innerHTML = 0;
+    num1.innerText = 0;
+    num2.innerText = 0;
 }
 
 function addNum() {
-    resultEl.innerText = num1 + num2
+    var num1 = document.getElementById("Number1").valueAsNumber;
+    var num2 = document.getElementById("Number2").valueAsNumber;
+    resultEl.innerText = num1 + num2;
 }
 
 function subtractNum() {
-    resultEl.innerText = num1 - num2
+    var num1 = document.getElementById("Number1").valueAsNumber;
+    var num2 = document.getElementById("Number2").valueAsNumber;
+    resultEl.innerText = num1 - num2;
 }
 
 function divideNum() {
-    resultEl.innerHTML = num1 / num2
+    var num1 = document.getElementById("Number1").valueAsNumber;
+    var num2 = document.getElementById("Number2").valueAsNumber;
+    resultEl.innerText = num1 / num2;
 }
 
 function multiplyNum() {
-    resultEl.innerText = num1 * num2
+    var num1 = document.getElementById("Number1").valueAsNumber;
+    var num2 = document.getElementById("Number2").valueAsNumber;
+    resultEl.innerText = num1 * num2;
 }
+
+
+resultEl.innerHTML = "Hello World!";
+console.log(resultEl);
+console.log(num1);
+console.log(num2);
 
 
 
