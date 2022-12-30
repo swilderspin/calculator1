@@ -1,6 +1,6 @@
 var resultEl = document.getElementById("result-el")
-var num1 = document.getElementById("Number1").valueAsNumber;
-var num2 = document.getElementById("Number2").valueAsNumber;
+var num1 = document.getElementById("Number1").value;
+var num2 = document.getElementById("Number2").value;
 
 
 function cancel() {
