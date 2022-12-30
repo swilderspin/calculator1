@@ -1,16 +1,11 @@
 var resultEl = document.getElementById("result-el");
 
 
-
-
-
-
 function cancel() {
     var num1 = document.getElementById("Number1").valueAsNumber;
     var num2 = document.getElementById("Number2").valueAsNumber;
-    resultEl.innerHTML = 0;
-    num1.innerText = 0;
-    num2.innerText = 0;
+    resultEl.textContent = 0;
+
 }
 
 function addNum() {
@@ -38,7 +33,7 @@ function multiplyNum() {
 }
 
 
-resultEl.innerHTML = "Hello World!";
+
 console.log(resultEl);
 console.log(num1);
 console.log(num2);
