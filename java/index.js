@@ -1,16 +1,17 @@
 var resultEl = document.getElementById("result-el");
 
 
-function cancel() {
-    var num1 = document.getElementById("Number1").valueAsNumber;
-    var num2 = document.getElementById("Number2").valueAsNumber;
-    resultEl.textContent = 0;
 
+
+function cancel() {
+    document.getElementById("Number1").valueAsNumber = 0;
+    document.getElementById("Number2").valueAsNumber = 0;
+    resultEl.textContent = 0;
 }
 
 function addNum() {
-    var num1 = document.getElementById("Number1").valueAsNumber;
-    var num2 = document.getElementById("Number2").valueAsNumber;
+    let num1 = document.getElementById("Number1").valueAsNumber;
+    let num2 = document.getElementById("Number2").valueAsNumber;
     resultEl.innerText = num1 + num2;
 }
 
